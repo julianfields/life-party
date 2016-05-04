@@ -1,0 +1,20 @@
+---
+title: Welcome to Middleman
+---
+
+.welcome
+  %form#contact-form{:action => "#", :method => "post"}
+    %input{:name => "redirect", :type => "hidden", :value => "http://www.opera.com"}/
+    %ul
+      %li
+        %label{:for => "name"} Name:
+        %input#name{:name => "name", :type => "text", :value => "name"}/
+      %li
+        %label{:for => "email"} Email:
+        %input#email{:name => "email", :type => "text", :value => ""}/
+      %li
+        %label{:for => "comments"} Comments:
+        %textarea#comments{:cols => "25", :name => "comments", :rows => "3"}
+      %li
+        %input{:type => "submit", :value => "submit"}/
+        %input{:type => "reset", :value => "reset"}/
